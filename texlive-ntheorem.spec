@@ -1,3 +1,9 @@
+# revision 21607
+# category Package
+# catalog-ctan /macros/latex/contrib/ntheorem
+# catalog-date 2011-02-18 13:25:28 +0100
+# catalog-license lppl
+# catalog-version 1.31
 Name:		texlive-ntheorem
 Version:	1.31
 Release:	1
@@ -48,6 +54,7 @@ support for making a list of theorems like \listoffigures.
 %doc %{_texmfdistdir}/source/latex/ntheorem/ntheorem.drv
 %doc %{_texmfdistdir}/source/latex/ntheorem/ntheorem.dtx
 %doc %{_texmfdistdir}/source/latex/ntheorem/ntheorem.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ support for making a list of theorems like \listoffigures.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
