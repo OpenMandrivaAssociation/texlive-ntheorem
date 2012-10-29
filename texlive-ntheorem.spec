@@ -1,12 +1,12 @@
-# revision 21607
+# revision 27609
 # category Package
 # catalog-ctan /macros/latex/contrib/ntheorem
-# catalog-date 2011-02-18 13:25:28 +0100
+# catalog-date 2012-03-30 15:19:52 +0200
 # catalog-license lppl
 # catalog-version 1.31
 Name:		texlive-ntheorem
 Version:	1.31
-Release:	2
+Release:	3
 Summary:	Enhanced theorem environment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ntheorem
