@@ -1,12 +1,12 @@
-# revision 27609
+# revision 21607
 # category Package
 # catalog-ctan /macros/latex/contrib/ntheorem
-# catalog-date 2012-03-30 15:19:52 +0200
+# catalog-date 2011-02-18 13:25:28 +0100
 # catalog-license lppl
 # catalog-version 1.31
 Name:		texlive-ntheorem
 Version:	1.31
-Release:	3
+Release:	2
 Summary:	Enhanced theorem environment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ntheorem
@@ -54,3 +54,17 @@ support for making a list of theorems like \listoffigures.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.31-2
++ Revision: 754445
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.31-1
++ Revision: 719139
+- texlive-ntheorem
+- texlive-ntheorem
+- texlive-ntheorem
+- texlive-ntheorem
+
