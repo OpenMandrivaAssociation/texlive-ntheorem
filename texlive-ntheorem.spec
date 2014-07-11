@@ -6,7 +6,7 @@
 # catalog-version 1.31
 Name:		texlive-ntheorem
 Version:	1.31
-Release:	8
+Release:	9
 Summary:	Enhanced theorem environment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ntheorem
