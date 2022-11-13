@@ -1,19 +1,13 @@
-# revision 27609
-# category Package
-# catalog-ctan /macros/latex/contrib/ntheorem
-# catalog-date 2012-03-30 15:19:52 +0200
-# catalog-license lppl
-# catalog-version 1.31
 Name:		texlive-ntheorem
-Version:	1.33
-Release:	2
+Version:	27609
+Release:	1
 Summary:	Enhanced theorem environment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ntheorem
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ support for amsmath displayed-equation environments); and
 support for making a list of theorems like \listoffigures.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,7 +41,8 @@ support for making a list of theorems like \listoffigures.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
