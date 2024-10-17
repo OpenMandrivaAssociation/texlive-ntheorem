@@ -3,7 +3,7 @@ Version:	27609
 Release:	2
 Summary:	Enhanced theorem environment
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ntheorem
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ntheorem
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem.doc.r%{version}.tar.xz
